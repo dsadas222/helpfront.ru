@@ -1,0 +1,70 @@
+/* Общие стили для страницы выбора статьи */
+@import url('../fonts/fonts.css');
+
+body{
+    font-family: MontserratR;
+    margin: 0;
+}
+
+.articles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.articles_item{
+    width: 25%;
+    position: relative;
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 200px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    color: black;
+}
+
+.articles_item:hover{
+    opacity: 0.8;
+}
+
+.articles_item h5,
+.articles_item > p{
+    padding: 0 15px;
+}
+
+.articles_item h5{
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 900;
+}
+
+.articles_item > p{
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.line-info{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: -1px;
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.line-info .author{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    text-align: right;
+}
+.line-info .author p,
+.line-info .info p{
+    margin: 5px 0;
+}

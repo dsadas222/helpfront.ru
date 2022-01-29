@@ -1,0 +1,81 @@
+/* Стили для шапки */
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+header a{
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+    transition: color .3s;
+}
+
+header a:hover{
+    color: blue;
+}
+
+.activeLinkHeader{
+    color: blue;
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(200, 255, 255);
+    padding: 10px 20px;
+}
+
+.filter .search{
+    margin-right: 80px;
+}
+
+.filter .search > input{
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding: 4px 8px;
+    font-family: MontserratR;
+} 
+
+.filter .search > input:focus{
+    outline: none;
+}
+
+#sort{
+    height: 20px;
+    margin: auto 0;
+    background-color: transparent;
+    border: none;
+    margin-right: 80px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: MontserratR;
+}
+
+.d-row{
+    display: flex;
+    flex-direction: row; 
+}
+label.d-row div{
+    display: flex;
+    flex-direction: row;
+}
+label.d-row div p{
+    margin: 0;
+}
+
+.range p{
+    margin: 0;
+}
+
+#range{
+    background-color: #000;
+}

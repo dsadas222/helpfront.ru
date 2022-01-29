@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статьи по библиотекам и Фреймворкам</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../header.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html">Главная</a>
+        <a href="../themeHtml/index.html">HTML</a>
+        <a href="../themeCss/index.html">CSS</a>
+        <a href="../themeJs/index.html">JavaScript</a>
+        <a href="./index.html" class="activeLinkHeader">Фреймворки + библиотеки</a>
+        <a href="../themeOther/index.html">Разное</a>
+        <a href="../ruleAdd.html">Правила добавления</a>
+        <a href="../documentation.html">Документация HF</a>
+    </header>
+    <div class="filter">
+        <div class="search">
+            <input id="searchInput" type="text" placeholder="Поиск">
+            <label class="d-row">
+                <div>
+                    <input id="searchAuthor" name="search" type="radio" checked>
+                    <p>по автору</p>
+                </div>
+                <div>
+                    <input id="searchTitle" name="search" type="radio">
+                    <p>по названию</p>
+                </div>
+            </label>
+        </div>
+        <select id="sort">
+            <option value="likeBetter">по возрастанию лайков</option>
+            <option value="likeLess">по убыванию лайков</option>
+            <option value="alphabetBetter">по алфавиту (А-Я)</option>
+            <option value="alphabetLess">по алфавиту (Я-А)</option>
+            <option value="dataBetter">самые новые</option>
+            <option value="dataLess">самые старые</option>
+        </select>
+        <div class="range">
+            <p>Сложность до: <span id="levelHardSpan">34</span>/100</p>
+            <input name="levelHardToggle" id="levelHardToggle" type="checkbox">
+            <input id="levelHardRange" disabled type="range" min="1" max="100">
+        </div>
+    </div>
+    <div class="articles" id="articles">
+        
+    </div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

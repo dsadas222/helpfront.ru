@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>документация по helpFront</title>
+    <link rel="stylesheet" href="../HF/helpFront.css">
+    <link rel="stylesheet" href="./header.css">
+</head>
+<body>
+    <header>
+        <a href="../../index.html">Главная</a>
+        <a href="./themeHtml/index.html">HTML</a>
+        <a href="./themeCss/index.html">CSS</a>
+        <a href="./themeJs/index.html">JavaScript</a>
+        <a href="./themeLibrary/index.html">Фреймворки + библиотеки</a>
+        <a href="themeOther/index.html">Разное</a>
+        <a href="./ruleAdd.html">Правила добавления</a>
+        <a href="./index.html" class="activeLinkHeader">Документация HF</a>
+    </header>
+    <div class="content">
+        <div class="navBlock" id="myNavBlock">
+            <div class="navBlock-menu">
+                <div class="navBlock-menu_item">
+                    <h4 data-key="Базовые компоненты" class="active">Базовые компоненты</h4>
+                    <div class="navBlock-menu_item_podmenu navBlock-menu_item_podmenu__active">
+                        <h5 data-key="Заголовки">Заголовки</h5>
+                        <h5 data-key="Таблицы">Таблицы</h5>
+                        <h5 data-key="Списки">Списки</h5>
+                        <h5 data-key="Ссылки">Ссылки</h5>
+                        <h5 data-key="Кнопка скачать">Кнопка скачать</h5>
+                        <h5 data-key="Примеры кода">Примеры кода</h5>
+                        <h5 data-key="Картинки">Картинки</h5>
+                        <h5 data-key="Блоки выделения">Блоки выделения</h5>
+                        <h5 data-key="Кнопки">Кнопки</h5>
+                    </div>
+                </div>
+                <div class="navBlock-menu_item">
+                    <h4>Модификаторы</h4>
+                    <div class="navBlock-menu_item_podmenu">
+                        <h5>Цвета</h5>
+                        <h5>Размеры текста</h5>
+                        <h5>Выравнивание</h5>
+                        <h5>Выдееления текста</h5>
+                        <h5>Отступы</h5>
+                        <h5>Позиционирование</h5>
+                        <h5>Тени</h5>
+                        <h5>Границы</h5>
+                    </div>
+                </div>
+                <div class="navBlock-menu_item">
+                    <h4>Сетка</h4>
+                    <div class="navBlock-menu_item_podmenu">
+                        <h5>Строки</h5>
+                        <h5>Колонки</h5>
+                        <h5>Ширина</h5>
+                        <h5>Выравнивания</h5>
+                        <h5>Мобильная версия</h5>
+                    </div>
+                </div>
+                <div class="navBlock-menu_item">
+                    <h4>Сложные компоненты</h4>
+                    <div class="navBlock-menu_item_podmenu">
+                        <h5>Навигационный блок</h5>
+                        <h5>Карусель</h5>
+                        <h5>Модальное окно</h5>
+                        <h5>Опросник</h5>
+                        <h5>Прогрессбар</h5>
+                        <h5>Формы</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="navBlock-content">
+                <div class="navBlock-content_block" data-lock="Базовые компоненты">
+                    <p>При использовании базовых компонентов вам будет достаточно базовых знаний html и css, без javaScript</p>
+                </div>
+                <div class="navBlock-content_block" data-lock="Заголовки">
+                    <p class="titleBig">Заголовки</p>
+                    <p>Всего существует 3 вида заголовков, отличающихся между собой только размерами. Применяется только к тегам "p", а не для h1-h6. </p>
+                    <p>Не надо использовать для изменения размеров текста! Для этого есть модификаторы размера текста</p>
+                    <ul>
+                        <li>
+                            <p><span class="titleBig">titleBig</span>  - самый большой размер 32px</p>
+                        </li>
+                        <li>
+                            <p><span class="titleMedium">titleMedium</span> - средний размер 26px</p>
+                        </li>
+                        <li>
+                            <p><span class="titleLittle">titleLittle</span> - самый маленький размер 20px</p>
+                        </li>
+                    </ul>
+                    <pre class="codeBlock">
+<p class="titleBig">titleBig</p>
+<p class="titleMedium">titleMedium</p>
+<p class="titleLittle">titleLittle</p>
+                    </pre>
+                </div>
+                <div class="navBlock-content_block" data-lock="Таблицы">
+                    <p class="titleBig">Таблицы</p>
+                    <p>По умолчанию библиотека HF сразу меняет таблицы на единый стиль. Однако, это не запрещает вам их модицифровать на своё усмотрению с помощью заготовленных модификаторов или своих собственных стилей (что не рекомендуется!)</p>
+                    <table class="">
+                        <tr>
+                            <td><p>Первый столбец</p></td>
+                            <td><p>Второй столбец</p></td>
+                            <td><p>Третий столбец</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>1.0</p></td>
+                            <td><p>1.1</p></td>
+                            <td><p>1.2</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>2.0</p></td>
+                            <td><p>2.1</p></td>
+                            <td><p>2.2</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>3.0</p></td>
+                            <td><p>3.1</p></td>
+                            <td><p>3.2</p></td>
+                        </tr>
+                    </table>
+                    <pre class="codeBlock">
+<table>
+    <tr>
+        <td><p>Первый столбец</p></td>
+        <td><p>Второй столбец</p></td>
+        <td><p>Третий столбец</p></td>
+    </tr>
+    <tr>
+        <td><p>1.0</p></td>
+        <td><p>1.1</p></td>
+        <td><p>1.2</p></td>
+    </tr>
+    <tr>
+        <td><p>2.0</p></td>
+        <td><p>2.1</p></td>
+        <td><p>2.2</p></td>
+    </tr>
+    <tr>
+        <td><p>3.0</p></td>
+        <td><p>3.1</p></td>
+        <td><p>3.2</p></td>
+    </tr>
+</table>
+                    </pre>
+                    <p class="titleMedium">Модификаторы для таблицы</p>
+                    <p>Если вам не нравится таблица по умолчанию, то вы можете её немного модифицировать на своё усмотрению из заготовленных классов. Для того, чтобы они применились, добавьте их тегу "table":</p>
+                    <ul>
+                        <li>
+                            <p>tableHover - убирает у стандартных таблиц голубые полоски и они теперь появляются при наведении на нужную вам строчку</p>
+                        </li>
+                        <li>
+                            <p>tableAllCenter - выравнивает весь текст внутри ячеек по центру (если это возможно)</p>
+                        </li>
+                        <li>
+                            <p>tableFirstTitle - добавляет заголовки в первой ячейки каждого столбца</p>
+                        </li>
+                        <li>
+                            <p>Здесь может быть ваш модификатор, жду предложений для дополнения</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navBlock-content_block active" data-lock="Списки">
+                    <p class="titleBig">Списки</p>
+                    <p>По умолчанию библиотека HF сразу меняет списки на единый стиль. Однако, это не запрещает вам их модицифровать на своё усмотрению с помощью заготовленных модификаторов или своих собственных стилей (что не рекомендуется!)</p>
+                    <div class="d-row">
+                        <div class="w-50">
+                            <ul>
+                                <li><p>Первый элемент</p></li>
+                                <li><p>Второй элемент</p></li>
+                                <li><p>Третий элемент</p></li>
+                            </ul>
+                        </div>
+                        <div class="w-50">
+                            <ol>
+                                <li><p>Первый элемент</p></li>
+                                <li><p>Второй элемент</p></li>
+                                <li><p>Третий элемент</p></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="d-row">
+                        <div class="w-50 mr-20">
+                            <pre class="codeBlock">
+<ul>
+    <li><p>Первый элемент</p></li>
+    <li><p>Второй элемент</p></li>
+    <li><p>Третий элемент</p></li>
+</ul>
+                            </pre>
+                        </div>
+                        <div class="w-50 ml-20">
+                            <pre class="codeBlock">
+<ol>
+    <li><p>Первый элемент</p></li>
+    <li><p>Второй элемент</p></li>
+    <li><p>Третий элемент</p></li>
+</ol>
+                            </pre>
+                        </div>
+                    </div>
+                    <p class="titleMedium">Модификаторы</p>
+                    <p>Если вам не нравится список по умолчанию, то вы можете его немного модифицировать на своё усмотрение из заготовленных классов. Для того, чтобы они применились, добавьте их тегу "ul" или "ol":</p>
+                    <ul>
+                        <li><p>Здесь может быть ваш первый модификатор, жду предложений для дополнения</p></li>
+                    </ul>
+                </div>
+                <div class="navBlock-content_block" data-lock="Ссылки">Ссылки</div>
+                <div class="navBlock-content_block" data-lock="Кнопка скачать">Кнопка скачать</div>
+                <div class="navBlock-content_block" data-lock="Примеры кода">Примеры кода</div>
+                <div class="navBlock-content_block" data-lock="Картинки">Картинки</div>
+                <div class="navBlock-content_block" data-lock="Блоки выделения">Блоки выделения</div>
+                <div class="navBlock-content_block" data-lock="Кнопки">Кнопки</div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../HF/helpFront.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+@import url("./css/grid.css");
+@import url("./css/hardComponents.css");
+@import url("./css/modifiers.css");
+@import url("./css/simpleComponents.css");
+@import url("../fonts/fonts.css");
+
+body{
+    margin: 0;
+    font-family: MontserratR;
+}
+
+.content{
+    padding: 0 100px;
+}

@@ -1,0 +1,72 @@
+/* Стили для главной страницы */
+@import url("./fonts/fonts.css");
+
+body{
+    margin: 0;
+    background-color: #000;
+    width: 100vw;
+}
+
+header{
+    padding: 20px 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+header .contact{
+    margin-left: auto;
+    color: white;
+}
+
+header .brand{
+    color: white;
+    margin: 0;
+    font-family: MontserratB;
+}
+
+.mainSlider{
+    margin: 0px;
+}
+
+.mainSlider-slide{
+    height: 600px;
+    text-decoration: none;
+    transition: transform .3s;
+}
+
+.mainSlider-slide:hover{
+    transform: scale(1.1);
+}
+
+.mainSlider-slide__content{
+    height: 100%;
+    margin: 0 40px;
+}
+
+.mainSlider-slide__content img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.mainSlider-slide__content h2{
+    margin: 0;
+    color: white;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-family: MontserratB;
+}
+
+.mainSlider-slide__content p{
+    margin: 0;
+    color: white;
+    margin-top: 2px;
+    text-align: center;
+    font-family: MontserratL;
+}
+
+.slick-prev, .slick-next{
+    background-color: transparent;
+}

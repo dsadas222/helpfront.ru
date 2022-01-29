@@ -1,0 +1,68 @@
+@import url('./general.less');
+
+/* Сложный компонент навигационного блока */
+.navBlock{
+    display: flex;
+    flex-direction: row;
+    color: @color_text_black;
+
+    &-menu{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+
+        &_item{
+            & > h4{
+                cursor: pointer;
+                margin: 10px 0;
+                font-size: 18px;
+
+                &:hover{
+                    color: @color_text_blue;
+                }
+
+                &.active{
+                    color: @color_text_blue;
+                }
+            }
+
+            &_podmenu{
+                display: none;
+
+                h5{
+                    cursor: pointer;
+                    margin: 8px;
+                    font-size: 14px;
+
+                    &.active{
+                        color: @color_text_blue;
+                    }
+
+                    &:hover{
+                        color: @color_text_blue;
+                    }
+                }
+
+                &__active{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        &_block{
+            display: none;
+
+            &.active{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

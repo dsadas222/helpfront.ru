@@ -1,0 +1,10 @@
+{
+  "name": "helpfront.ru",
+  "version": "1.0.0",
+  "description": "site for cyberlandia",
+  "scripts": {
+    "compileTS": "tsc"
+  },
+  "author": "Egorov Maxim <defoltmaks@gmail.com>",
+  "license": "ISC"
+}
