@@ -5,9 +5,14 @@ function changeActiveNavBlock(key, selector) {
         }
         else {
             document.querySelector(`${selector} .navBlock-menu .active`).classList.remove("active");
-            key.classList.add("active");
             document.querySelector(`${selector} .navBlock-content .active`).classList.remove("active");
+            key.classList.add("active");
             document.querySelector(`${selector} .navBlock-content .navBlock-content_block[data-lock="${key.dataset.key}"]`).classList.add("active");
+            // для переключения podMenu
+            if (key.tagName === "H4") {
+                document.querySelector('.active_podmenu').classList.remove("active_podmenu");
+                document.querySelector(`${selector} h4[data-key="${key.dataset.key}"]`).nextElementSibling.classList.add("active_podmenu");
+            }
         }
     }
     catch (error) {
@@ -21,7 +26,7 @@ export function createNavBlock(selector) {
     // регистрация слушателя на меню
     document.querySelector(`${selector} .navBlock-menu`).addEventListener("click", (e) => {
         // @ts-ignore думает, что tagName нет в EventTarget
-        if (e.target.tagName == "H4" || e.target.tagName == "H5") {
+        if (e.target.tagName == "H5" || e.target.tagName == "H4") {
             // @ts-ignore думает, что e.target нельзя передать
             changeActiveNavBlock(e.target, selector);
         }

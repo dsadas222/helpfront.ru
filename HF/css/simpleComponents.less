@@ -13,31 +13,35 @@
 
 .specBlock{
     padding: 10px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 7px 3px rgba(34, 60, 80, 0.2);
-    background-color: rgb(219, 219, 219);
-}
+    border: 1px solid @color_black;
+    box-shadow: 0px 0px 7px 3px @color_shadow_grey;
+    background-color: @color_background_grey;
 
-.specBlock__danger{
-    background-color: rgb(255, 198, 198);
-    border: 1px solid rgb(255, 0, 0);
-    box-shadow: 0px 0px 7px 3px rgba(80, 34, 34, 0.2);
-}
-
-.specBlock__warning {
-    background-color: rgb(255, 251, 198);
-    border: 1px solid rgb(251, 255, 0);
-    box-shadow: 0px 0px 7px 3px rgba(73, 80, 34, 0.2);
-}
-
-.specBlock__good {
-    background-color: rgb(214, 255, 198);
-    border: 1px solid rgb(51, 255, 0);
-    box-shadow: 0px 0px 7px 3px rgba(49, 80, 34, 0.2);
+    &__danger{
+        background-color: @color_background_danger;
+        border: 1px solid @color_danger;
+        box-shadow: 0px 0px 7px 3px @color_shadow_grey;
+    }
+    
+    &__warning {
+        background-color: @color_background_warning;
+        border: 1px solid @color_warning;
+        box-shadow: 0px 0px 7px 3px @color_shadow_grey;
+    }
+    
+    &__good {
+        background-color: @color_background_good;
+        border: 1px solid @color_good;
+        box-shadow: 0px 0px 7px 3px @color_shadow_grey;
+    }
 }
 
 .content a{
     color: blue;
+
+    &.linkAlways:visited{
+        color: blue;
+    }
 }
 
 .titleBig,
@@ -101,12 +105,14 @@ table{
 img{
     display: block;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .downloadBlock{
     text-decoration: none;
     border: 1px solid #444;
     display: inline-flex;
+    flex-direction: row;
     padding: 10px 5px;
     transition: .5s;
 
@@ -136,28 +142,30 @@ img{
     font-size: 16px;
     transition: .5s;
     cursor: pointer;
-}
+    text-decoration: none;
+    font-family: MontserratR;
 
-.btn:hover{
-    transform: translateY(-2px);
-}
+    &.btnHoverTranslateY:hover{
+        transform: translateY(-2px);
+    }
 
-.btn__danger{
-    box-shadow: 0px 0px 4px 1px rgba(80, 34, 34, 0.2);
-    border: 1px solid rgb(255, 50, 50);
-    background-color: rgb(255, 0, 0);
-}
-
-.btn__warning{
-    box-shadow: 0px 0px 4px 1px rgba(77, 80, 34, 0.2);
-    border: 1px solid rgb(255, 252, 50);
-    background-color: rgb(251, 255, 0);
-    color: #444;
-}
-
-.btn__good{
-    box-shadow: 0px 0px 4px 1px rgba(45, 80, 34, 0.2);
-    border: 1px solid rgb(74, 255, 50);
-    background-color: rgb(72, 255, 0);
-    color: black;
+    &__danger{
+        box-shadow: 0px 0px 4px 1px rgba(80, 34, 34, 0.2);
+        border: 1px solid rgb(255, 50, 50);
+        background-color: rgb(255, 0, 0);
+    }
+    
+    &__warning{
+        box-shadow: 0px 0px 4px 1px rgba(77, 80, 34, 0.2);
+        border: 1px solid rgb(255, 252, 50);
+        background-color: rgb(251, 255, 0);
+        color: @color_text_black !important;
+    }
+    
+    &__good{
+        box-shadow: 0px 0px 4px 1px rgba(45, 80, 34, 0.2);
+        border: 1px solid rgb(74, 255, 50);
+        background-color: rgb(72, 255, 0);
+        color: @color_text_black;
+    }
 }

@@ -24,29 +24,28 @@
             <div class="navBlock-menu">
                 <div class="navBlock-menu_item">
                     <h4 data-key="Базовые компоненты" class="active">Базовые компоненты</h4>
-                    <div class="navBlock-menu_item_podmenu navBlock-menu_item_podmenu__active">
+                    <div class="navBlock-menu_item_podmenu active_podmenu">
                         <h5 data-key="Заголовки">Заголовки</h5>
                         <h5 data-key="Таблицы">Таблицы</h5>
                         <h5 data-key="Списки">Списки</h5>
                         <h5 data-key="Ссылки">Ссылки</h5>
                         <h5 data-key="Кнопка скачать">Кнопка скачать</h5>
-                        <h5 data-key="Примеры кода">Примеры кода</h5>
                         <h5 data-key="Картинки">Картинки</h5>
                         <h5 data-key="Блоки выделения">Блоки выделения</h5>
                         <h5 data-key="Кнопки">Кнопки</h5>
                     </div>
                 </div>
                 <div class="navBlock-menu_item">
-                    <h4>Модификаторы</h4>
+                    <h4 data-key="Модификаторы">Модификаторы</h4>
                     <div class="navBlock-menu_item_podmenu">
-                        <h5>Цвета</h5>
-                        <h5>Размеры текста</h5>
-                        <h5>Выравнивание</h5>
-                        <h5>Выдееления текста</h5>
-                        <h5>Отступы</h5>
-                        <h5>Позиционирование</h5>
-                        <h5>Тени</h5>
-                        <h5>Границы</h5>
+                        <h5 data-key="Цвета">Цвета</h5>
+                        <h5 data-key="Размеры текста">Размеры текста</h5>
+                        <h5 data-key="Выравнивание">Выравнивание</h5>
+                        <h5 data-key="Выделения текста">Выделения текста</h5>
+                        <h5 data-key="Отступы">Отступы</h5>
+                        <h5 data-key="Позиционирование">Позиционирование</h5>
+                        <h5 data-key="Тени">Тени</h5>
+                        <h5 data-key="Границы">Границы</h5>
                     </div>
                 </div>
                 <div class="navBlock-menu_item">
@@ -68,11 +67,12 @@
                         <h5>Опросник</h5>
                         <h5>Прогрессбар</h5>
                         <h5>Формы</h5>
+                        <h5>Примеры кода</h5>
                     </div>
                 </div>
             </div>
             <div class="navBlock-content">
-                <div class="navBlock-content_block" data-lock="Базовые компоненты">
+                <div class="navBlock-content_block active" data-lock="Базовые компоненты">
                     <p>При использовании базовых компонентов вам будет достаточно базовых знаний html и css, без javaScript</p>
                 </div>
                 <div class="navBlock-content_block" data-lock="Заголовки">
@@ -162,7 +162,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navBlock-content_block active" data-lock="Списки">
+                <div class="navBlock-content_block " data-lock="Списки">
                     <p class="titleBig">Списки</p>
                     <p>По умолчанию библиотека HF сразу меняет списки на единый стиль. Однако, это не запрещает вам их модицифровать на своё усмотрению с помощью заготовленных модификаторов или своих собственных стилей (что не рекомендуется!)</p>
                     <div class="d-row">
@@ -207,15 +207,134 @@
                         <li><p>Здесь может быть ваш первый модификатор, жду предложений для дополнения</p></li>
                     </ul>
                 </div>
-                <div class="navBlock-content_block" data-lock="Ссылки">Ссылки</div>
-                <div class="navBlock-content_block" data-lock="Кнопка скачать">Кнопка скачать</div>
-                <div class="navBlock-content_block" data-lock="Примеры кода">Примеры кода</div>
-                <div class="navBlock-content_block" data-lock="Картинки">Картинки</div>
-                <div class="navBlock-content_block" data-lock="Блоки выделения">Блоки выделения</div>
-                <div class="navBlock-content_block" data-lock="Кнопки">Кнопки</div>
+                <div class="navBlock-content_block" data-lock="Ссылки">
+                    <p class="titleBig">Ссылки</p>
+                    <p>По умолчанию библиотека HF сразу меняет ссылки на единый стиль. Однако, это не запрещает вам их модицифровать на своё усмотрению с помощью заготовленных модификаторов или своих собственных стилей (что не рекомендуется!)</p>
+                    <a href="#">Обычная ссылка</a>
+                    <pre class="codeBlock">
+<a href="#">Обычная ссылка</a>
+                    </pre>
+                    <p class="titleMedium">Модификаторы</p>
+                    <p>Если вам не нравится ссылка по умолчанию, то вы можете её немного модифицировать на своё усмотрение из заготовленных классов. Для того, чтобы они применились, добавьте их тегу "a":</p>
+                    <ul>
+                        <li><p>linkAlways - делает так, чтобы ссылка всегда была одного цвета, даже после её посещения (по умолчанию использованные ссылки становятся фиолетовыми)</p></li>
+                        <li><p>Здесь может быть ваш первый модификатор, жду предложений для дополнения</p></li>
+                    </ul>
+                </div>
+                <div class="navBlock-content_block" data-lock="Кнопка скачать">
+                    <p class="titleBig">Кнопка скачать</p>
+                    <p>Специальный компонент, разработанный для библиотеки, который служит для того, чтобы скачать какой-либо файл. Обратите внимание, что не каждый файл можно скачать, поскольку некоторые из них сразу открываются в браузере.</p>
+                    <a href="#" class="downloadBlock mr-auto">
+                        <p>Скачать что-то</p>
+                    </a>
+                    <pre class="codeBlock">
+<a href="ссылка на файл" class="downloadBlock">
+    <p>Скачать что-то</p>
+</a>
+                    </pre>
+                    <p>Обратите внимание, что картинка добавляется самостоятельно с помощью скрипта, поэтому её можно не добавлять самому. Самое главное, помните, что для такой кнопки обязательно надо добавить класс "downloadBlock" и использовать тег "a".</p>
+                    <p class="titleMedium">Модификаторы</p>
+                    <ul>
+                        <li><p>Здесь может быть ваш первый модификатор, жду предложений для дополнения</p></li>
+                    </ul>
+                </div>
+                <div class="navBlock-content_block" data-lock="Картинки">
+                    <p class="titleBig">Картинки</p>
+                    <p>По умолчанию библиотека HF сразу меняет картинки на единый стиль. Однако, это не запрещает вам их модицифровать на своё усмотрению с помощью заготовленных модификаторов или своих собственных стилей (что не рекомендуется!)</p>
+                    <p>Важное замечание, что по умолчанию любая картинка растягивается на всю ширину блока, поэтому если вам этого не надо, то можете использовать модификаторы размеров или для более тонкой настройки, свои стили</p>
+                    <img src="media/img/example.jpg" alt="такса">
+                    <pre class="codeBlock">
+<img src="#" alt="описание картинки">
+                    </pre>
+                </div>
+                <div class="navBlock-content_block" data-lock="Блоки выделения">
+                    <p class="titleBig">Блок выделения</p>
+                    <p>Специальный компонент, разработанный для библиотеки, который служит для того, чтобы выделить какую-то информацию в рамку. Категорически запрещается использовать свои цвета для этого компонента, так как он будет содержать уже все необходимые цвета единой стилистики.</p>
+                    <div class="specBlock">
+                        <p>Сюда можно разметить любой контент</p>
+                    </div>
+                    <div class="specBlock specBlock__danger mt-30">
+                        <p>Сюда можно разметить любой важный контент</p>
+                    </div>
+                    <div class="specBlock specBlock__warning mt-30">
+                        <p>Сюда можно разметить любой срочный контент</p>
+                    </div>
+                    <div class="specBlock specBlock__good mt-30">
+                        <p>Сюда можно разметить любой спокойный контент</p>
+                    </div>
+                    <pre class="codeBlock">
+<div class="specBlock">
+    <p>Сюда можно разметить любой контент</p>
+</div>
+
+<div class="specBlock specBlock__danger">
+    <p>Сюда можно разметить любой важный контент</p>
+</div>
+
+<div class="specBlock specBlock__warning mt-30">
+    <p>Сюда можно разметить любой срочный контент</p>
+</div>
+
+<div class="specBlock specBlock__good mt-30">
+    <p>Сюда можно разметить любой спокойный контент</p>
+</div>
+                    </pre>
+                    <p class="titleMedium">Модификаторы</p>
+                    <ul>
+                        <li><p>Здесь может быть ваш первый модификатор, жду предложений для дополнения</p></li>
+                    </ul>
+                </div>
+                <div class="navBlock-content_block" data-lock="Кнопки">
+                    <p class="titleBig">Кнопки</p>
+                    <p>Специальный компонент, разработанный для библиотеки, который служит для создания обычной кнопки. Категорически запрещается использовать свои цвета для этого компонента, так как он будет содержать уже все необходимые цвета единой стилистики.</p>
+                    <p>Также данный компонент можно использовать на таких тегах как: "div", "button", "a". На любом из них кнопка будет смотрется без значительных отличий</p>
+                    <button class="mr-auto btn">Обычная кнопка</button>
+                    <div class="btn btn__danger mr-auto mt-10">Опасная кнопка</div>
+                    <a href="#" class="btn btn__warning mr-auto mt-10">Тревожная кнопка</a>
+                    <button class="mr-auto btn btn__good mt-10">Cпокойная кнопка</button>
+                    <pre class="codeBlock">
+<button class="btn">Обычная кнопка</button>
+<div class="btn btn__danger">Опасная кнопка</div>
+<a href="#" class="btn btn__warning">Тревожная кнопка</a>
+<button class="btn btn__good ">Cпокойная кнопка</button>
+                    </pre>
+                    <p class="titleMedium">Модификаторы</p>
+                    <ul>
+                        <li><p>btnHoverTranslateY - при наведении кнопка будет немного подниматься вверх</p></li>
+                        <li><p>Здесь может быть ваш первый модификатор, жду предложений для дополнения</p></li>
+                    </ul>
+                </div>
+                <div class="navBlock-content_block" data-lock="Модификаторы">
+                    <p>модификаторы</p>
+                </div>
+                <div class="navBlock-content_block" data-lock="Цвета">
+                    Цвета
+                </div>
+                <div class="navBlock-content_block" data-lock="Размеры текста">
+                    Размеры текста
+                </div>
+                <div class="navBlock-content_block" data-lock="Выравнивание">
+                    Выравнивание
+                </div>
+                <div class="navBlock-content_block" data-lock="Выделения текста">
+                    Выделения текста
+                </div>
+                <div class="navBlock-content_block" data-lock="Отступы">
+                    Отступы
+                </div>
+                <div class="navBlock-content_block" data-lock="Позиционирование">
+                    Позиционирование
+                </div>
+                <div class="navBlock-content_block" data-lock="Тени">
+                    Тени
+                </div>
+                <div class="navBlock-content_block" data-lock="Границы">
+                    Границы
+                </div>
             </div>
         </div>
     </div>
     <script type="module" src="../HF/helpFront.js"></script>
+    <script type="module" src="./documantation.js"></script>
 </body>
 </html>
