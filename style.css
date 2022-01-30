@@ -5,6 +5,9 @@ body{
     margin: 0;
     background-color: #000;
     width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -17,6 +20,19 @@ header{
 header .contact{
     margin-left: auto;
     color: white;
+}
+
+header .contact a{
+    margin: 0 5px;
+}
+
+header .contact img{
+    transition: .2s;
+    width: 35px;
+}
+
+header .contact img:hover{
+    transform: scale(1.1);
 }
 
 header .brand{
@@ -35,8 +51,25 @@ header .brand{
     transition: transform .3s;
 }
 
+@media (max-height: 900px) {
+    .mainSlider-slide{
+        height: 500px;
+    }
+}
+
+
 .mainSlider-slide:hover{
     transform: scale(1.1);
+}
+
+@media (max-height: 800px) {
+    .mainSlider-slide{
+        height: 400px;
+    }
+
+    .mainSlider-slide:hover{
+        transform: scale(1.05);
+    }
 }
 
 .mainSlider-slide__content{
@@ -69,4 +102,22 @@ header .brand{
 
 .slick-prev, .slick-next{
     background-color: transparent;
+}
+
+footer{
+    font-family: MontserratR;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 0 40px;
+}
+
+footer a{
+    margin-left: auto;
+    color: white;
+}
+
+footer a:hover{
+    color: blue;
 }

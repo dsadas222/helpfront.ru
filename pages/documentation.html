@@ -40,56 +40,46 @@
                     <div class="navBlock-menu_item_podmenu">
                         <h5 data-key="Цвета">Цвета</h5>
                         <h5 data-key="Размеры текста">Размеры текста</h5>
-                        <h5 data-key="Выравнивание">Выравнивание</h5>
                         <h5 data-key="Выделения текста">Выделения текста</h5>
                         <h5 data-key="Отступы">Отступы</h5>
-                        <h5 data-key="Позиционирование">Позиционирование</h5>
                         <h5 data-key="Тени">Тени</h5>
                         <h5 data-key="Границы">Границы</h5>
                     </div>
                 </div>
                 <div class="navBlock-menu_item">
-                    <h4>Сетка</h4>
+                    <h4 data-key="Сетка">Сетка</h4>
                     <div class="navBlock-menu_item_podmenu">
-                        <h5>Строки</h5>
-                        <h5>Колонки</h5>
-                        <h5>Ширина</h5>
-                        <h5>Выравнивания</h5>
-                        <h5>Мобильная версия</h5>
+                        <h5 data-key="Строки">Строки</h5>
+                        <h5 data-key="Колонки">Колонки</h5>
+                        <h5 data-key="Ширина">Ширина</h5>
+                        <h5 data-key="Выравнивания">Выравнивания</h5>
+                        <h5 data-key="Мобильная версия">Мобильная версия</h5>
                     </div>
                 </div>
                 <div class="navBlock-menu_item">
-                    <h4>Сложные компоненты</h4>
+                    <h4 data-key="Сложные компоненты">Сложные компоненты</h4>
                     <div class="navBlock-menu_item_podmenu">
-                        <h5>Навигационный блок</h5>
-                        <h5>Карусель</h5>
-                        <h5>Модальное окно</h5>
-                        <h5>Опросник</h5>
-                        <h5>Прогрессбар</h5>
-                        <h5>Формы</h5>
-                        <h5>Примеры кода</h5>
+                        <h5 data-key="Навигационный блок">Навигационный блок</h5>
+                        <h5 data-key="Карусель">Карусель</h5>
+                        <h5 data-key="Модальное окно">Модальное окно</h5>
+                        <h5 data-key="Опросник">Опросник</h5>
+                        <h5 data-key="Прогрессбар">Прогрессбар</h5>
+                        <h5 data-key="Формы">Формы</h5>
+                        <h5 data-key="Примеры кода">Примеры кода</h5>
                     </div>
                 </div>
             </div>
             <div class="navBlock-content">
-                <div class="navBlock-content_block active" data-lock="Базовые компоненты">
+                <div class="navBlock-content_block" data-lock="Базовые компоненты">
                     <p>При использовании базовых компонентов вам будет достаточно базовых знаний html и css, без javaScript</p>
                 </div>
-                <div class="navBlock-content_block" data-lock="Заголовки">
+                <div class="navBlock-content_block active" data-lock="Заголовки">
                     <p class="titleBig">Заголовки</p>
                     <p>Всего существует 3 вида заголовков, отличающихся между собой только размерами. Применяется только к тегам "p", а не для h1-h6. </p>
                     <p>Не надо использовать для изменения размеров текста! Для этого есть модификаторы размера текста</p>
-                    <ul>
-                        <li>
-                            <p><span class="titleBig">titleBig</span>  - самый большой размер 32px</p>
-                        </li>
-                        <li>
-                            <p><span class="titleMedium">titleMedium</span> - средний размер 26px</p>
-                        </li>
-                        <li>
-                            <p><span class="titleLittle">titleLittle</span> - самый маленький размер 20px</p>
-                        </li>
-                    </ul>
+                    <p><span class="titleBig">titleBig</span>  - самый большой размер 32px</p>
+                    <p><span class="titleMedium">titleMedium</span> - средний размер 26px</p>
+                    <p><span class="titleLittle">titleLittle</span> - самый маленький размер 20px</p>
                     <pre class="codeBlock">
 <p class="titleBig">titleBig</p>
 <p class="titleMedium">titleMedium</p>
@@ -305,32 +295,174 @@
                     </ul>
                 </div>
                 <div class="navBlock-content_block" data-lock="Модификаторы">
-                    <p>модификаторы</p>
+                    <p class="titleBig">Модификаторы</p>
+                    <p>С помощью модификаторов можно изменять размеры, цвета, анимации и другие вещи у многих компонентов или своих собственных тегов на сайте</p>
                 </div>
                 <div class="navBlock-content_block" data-lock="Цвета">
-                    Цвета
+                    <p class="titleBig">Цвета</p>
+                    <p>Модификаторы цвета созданы как для текстов, так и для фонов. Категорически запрещается переписывать цвета, используемых классов, так как это нарушит общую работу селекторов и библиотеки</p>
+                    <p class="text-black my-0 py-10">Чёрный цвет</p>
+                    <p class="text-blue my-0 py-10">Синий цвет</p>
+                    <p class="text-danger my-0 py-10">Красный цвет</p>
+                    <p class="text-warning my-0 py-10 bg-grey">Жёлтый цвет</p>
+                    <p class="text-good my-0 py-10">Зелёный цвет</p>
+                    <pre class="codeBlock">
+<p class="text-black">Чёрный цвет</p>
+<p class="text-blue">Синий цвет</p>
+<p class="text-danger">Красный цвет</p>
+<p class="text-warning">Жёлтый цвет</p>
+<p class="text-good">Зелёный цвет</p>
+                    </pre>
+                    <div class="d-row">
+                        <div class="block bg-lightBlue mx-20">Голубой</div>
+                        <div class="block bg-grey mx-20">Серый</div>
+                        <div class="block bg-danger mx-20">Красный</div>
+                        <div class="block bg-warning mx-20">Жёлтый</div>
+                        <div class="block bg-good mx-20">Зелёный</div>
+                    </div>
+                    <pre class="codeBlock">
+<div class="block bg-lightBlue">Голубой</div>
+<div class="block bg-grey">Серый</div>
+<div class="block bg-danger">Красный</div>
+<div class="block bg-warning">Жёлтый</div>
+<div class="block bg-good">Зелёный</div>
+                    </pre>
                 </div>
                 <div class="navBlock-content_block" data-lock="Размеры текста">
-                    Размеры текста
-                </div>
-                <div class="navBlock-content_block" data-lock="Выравнивание">
-                    Выравнивание
+                    <p class="titleBig">Размеры текстов</p>
+                    <p>Модификаторы размеров текстов созданы только для текстов (не используйте для изменения ширины блоков, для этого перейдти в сетку). Категорически запрещается переписывать размеры, используемых классов, так как это нарушит общую работу селекторов и библиотеки</p>
+                    <p class="fz-12 my-10">Текст размеров в 12px</p>
+                    <p class="fz-14 my-10">Текст размеров в 14px</p>
+                    <p class="fz-16 my-10">Текст размеров в 16px</p>
+                    <p class="fz-18 my-10">Текст размеров в 18px</p>
+                    <p class="fz-20 my-10">Текст размеров в 20px</p>
+                    <pre class="codeBlock">
+<p class="fz-12">Текст размеров в 12px</p>
+<p class="fz-14">Текст размеров в 14px</p>
+<p class="fz-16">Текст размеров в 16px</p>
+<p class="fz-18">Текст размеров в 18px</p>
+<p class="fz-20">Текст размеров в 20px</p>
+                    </pre>
                 </div>
                 <div class="navBlock-content_block" data-lock="Выделения текста">
-                    Выделения текста
+                    <p class="titleBig">Выделения текста</p>
+                    <p>Модификаторы выделения текстов созданы только для текстов (не используйте для изменения чего-то другого). Категорически запрещается переписывать свойства, используемых классов, так как это нарушит общую работу селекторов и библиотеки</p>
+                    <p class="titleMedium">Жирность текста</p>
+                    <p class="fw-l my-10 fz-20">Тонкий текст</p>
+                    <p class="fw-r my-10 fz-20">Обычный текст</p>
+                    <p class="fw-b my-10 fz-20">Жирный текст</p>
+                    <pre class="codeBlock">
+<p class="fw-l">Тонкий текст</p>
+<p class="fw-r">Обычный текст</p>
+<p class="fw-b">Жирный текст</p>
+                    </pre>
+                    <p class="titleMedium">Декораторы текста</p>
+                    <p class="fd-underline my-10 fz-20">Подчёркнутый текст</p>
+                    <p class="fd-through my-10 fz-20">Перечёркнутый текст</p>
+                    <p class="fd-italic my-10 fz-20">Курсивный текст</p>
+                    <p class="fd-bc my-10 fz-20 mr-auto">Выделенный текст</p>
+                    <pre class="codeBlock">
+<p class="fd-underline">Подчёркнутый текст</p>
+<p class="fd-through">Перечёркнутый текст</p>
+<p class="fd-italic">Курсивный текст</p>
+<p class="fd-bc">Выделенный текст</p>
+                    </pre>
                 </div>
                 <div class="navBlock-content_block" data-lock="Отступы">
-                    Отступы
-                </div>
-                <div class="navBlock-content_block" data-lock="Позиционирование">
-                    Позиционирование
+                    <p class="titleBig">Отступы</p>
+                    <p>Модификаторы отступов созданы для любого тега или компонента. Категорически запрещается переписывать свойства, используемых классов, так как это нарушит общую работу селекторов и библиотеки. Общая концепция модификатора очень проста:</p>
+                    <p class="titleMedium my-0">Пример: mt-10</p>
+                    <ul>
+                        <li>Первая буква
+                            <ul>
+                                <li><p>m - margin</p></li>
+                                <li><p>p - padding</p></li>
+                            </ul>
+                        </li>
+                        <li>Вторая буква
+                            <ul>
+                                <li><p>t - top</p></li>
+                                <li><p>b - bottom</p></li>
+                                <li><p>r - right</p></li>
+                                <li><p>l - left</p></li>
+                                <li><p>x - по горизонтали (right и left одновременно)</p></li>
+                                <li><p>y - по вертикали (top и bottom одновременно)</p></li>
+                                <li><p>можно пропустить букву, что будет означать отступы для всех сторон</p></li>
+                            </ul>
+                        </li>
+                        <li>Цифра после тире
+                            <ul>
+                                <li><p>0 - 0px</p></li>
+                                <li><p>10 - 10px</p></li>
+                                <li><p>20 - 20px</p></li>
+                                <li><p>30 - 30px</p></li>
+                                <li><p>auto - значение auto</p></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="titleMedium">Примеры</p>
+                    <p class="my-10">mt-10 = добавляет margin-top: 10px</p>
+                    <p class="my-10">pr-30 = добавляет padding-right: 30px</p>
+                    <p class="my-10">mx-auto = добавляет margin-left: auto и margin-right: auto</p>
+                    <p class="my-10">p-0 = добавляет padding: 0px</p>
                 </div>
                 <div class="navBlock-content_block" data-lock="Тени">
-                    Тени
+                    <p class="titleBig">Тени</p>
+                    <p>Модификаторы теней созданы для картинок или блоков. Категорически запрещается переписывать свойства, используемых классов, так как это нарушит общую работу селекторов и библиотеки. Общая концепция модификатора очень проста:</p>
+                    <div class="d-row">
+                        <div class="block mx-10 border block-shadow"></div>
+                        <div class="block mx-10 border block-shadow__left"></div>
+                        <div class="block mx-10 border block-shadow__right"></div>
+                        <div class="block mx-10 border block-shadow__top"></div>
+                        <div class="block mx-10 border block-shadow__bottom"></div>
+                        <div class="block mx-10 border block-shadow__insert"></div>
+                    </div>
+                    <pre class="codeBlock">
+<div class="block-shadow"></div>
+<div class="block-shadow__left"></div>
+<div class="block-shadow__right"></div>
+<div class="block-shadow__top"></div>
+<div class="block-shadow__bottom"></div>
+<div class="block-shadow__insert"></div>
+                    </pre>
                 </div>
                 <div class="navBlock-content_block" data-lock="Границы">
-                    Границы
+                    <p class="titleBig">Границы</p>
+                    <p>Модификаторы границ созданы для любого тега. Категорически запрещается переписывать свойства, используемых классов, так как это нарушит общую работу селекторов и библиотеки. Общая концепция модификатора очень проста:</p>
+                    <div class="d-row">
+                        <div class="block mx-10 border"></div>
+                        <div class="block mx-10 border__danger"></div>
+                        <div class="block mx-10 border__warning"></div>
+                        <div class="block mx-10 border__good"></div>
+                    </div>
+                    <pre class="codeBlock">
+<div class="border"></div>
+<div class="border__danger"></div>
+<div class="border__warning"></div>
+<div class="border__good"></div>
+                    </pre>
                 </div>
+                <div class="navBlock-content_block" data-lock="Сетка">
+                    <p class="titleBig">Сетка</p>
+                    <p>На данный момент сетка находится в разработке из-за большой сложности реалзиации. Пока она не будет готова, вам нужно самостоятельно делать свою сетку элементов</p>
+                </div>
+                <div class="navBlock-content_block" data-lock="Строки">Строки</div>
+                <div class="navBlock-content_block" data-lock="Колонки">Колонки</div>
+                <div class="navBlock-content_block" data-lock="Ширина">Ширина</div>
+                <div class="navBlock-content_block" data-lock="Выравнивания">Выравнивания</div>
+                <div class="navBlock-content_block" data-lock="Мобильная версия">Мобильная версия</div>
+                <div class="navBlock-content_block" data-lock="Сложные компоненты">
+                    <p class="titleBig">Сложные компоненты</p>
+                    <p>На данный момент сложные компоненты находятся в разработке из-за большой сложности реалзиации. Близжайшие компоненты, которые планируются к выпуску: "навигационная панель" и "пример кода"</p>
+                </div>
+                <div class="navBlock-content_block" data-lock="Навигационный блок">Навигационный блок</div>
+                <div class="navBlock-content_block" data-lock="Карусель">Карусель</div>
+                <div class="navBlock-content_block" data-lock="Модальное окно">Модальное окно</div>
+                <div class="navBlock-content_block" data-lock="Опросник">Опросник</div>
+                <div class="navBlock-content_block" data-lock="Прогрессбар">Прогрессбар</div>
+                <div class="navBlock-content_block" data-lock="Формы">Формы</div>
+                <div class="navBlock-content_block" data-lock="Примеры кода">Примеры кода</div>
+
             </div>
         </div>
     </div>
