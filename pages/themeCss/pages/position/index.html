@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position \ его значения</title>
+    <link rel="stylesheet" href="https://helpfront.ru/pages/header.css">
+    <link rel="stylesheet" href="https://helpfront.ru/HF/helpFront.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    
+        ym(87333420, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/87333420" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+    <header>
+        <a href="../../../../index.html">Главная</a>
+        <a href="../../../themeHtml/index.html">HTML</a>
+        <a href="../../index.html" class="activeLinkHeader">CSS</a>
+        <a href="../../../themeJs/index.html">JavaScript</a>
+        <a href="../../../themeLibrary/index.html">Фреймворки + библиотеки</a>
+        <a href="../../../themeOther/index.html">Разное</a>
+        <a href="../../../ruleAdd.html">Правила добавления</a>
+        <a href="../../../documentation.html">Документация HF</a>
+    </header>
+    <div class="background">
+        <div class="obh1">
+            <p class="h1"><b>СВОЙСТВО POSITION</b></p>
+        </div>
+        <div class="obpos">
+            <h1 class="posh1"><b>ЧТО ТАКОЕ POSITION ?</b></h1>
+            <div class="obyas">
+                <p class="p-obyas"><b>Устанавливает способ позиционирования элемента относительно 
+                окна браузера или других объектов на веб-странице</b></p>
+            </div>
+            <div class="znach">
+                <p class="h1-znach"><b>ЗНАЧЕНИЕ ABSOLUTE</b></p>
+                <div class="znach1-obyas">
+                    <p class="znch"><b>Указывает, что элемент абсолютно позиционирован, 
+                        при этом другие элементы отображаются на веб-странице словно абсолютно 
+                        позиционированного элемента и нет. Положение элемента задается свойствами 
+                        left, top, right и bottom, также на положение влияет значение свойства 
+                        position родительского элемента. Так, если у родителя значение position 
+                        установлено как static или родителя нет, то отсчет координат ведется от 
+                        края окна браузера. Если у родителя значение position задано 
+                        как fixed, relative или absolute, то отсчет координат ведется 
+                        от края родительского элемента</b></p>
+                </div>
+                <div class="obertka">
+                    <div class="ob">
+                        <div class="block"></div>
+                    </div>
+                    <div class="obertka-span1">
+                        <span class="tag1">
+                            <span class="keyword1"><b>.block {</b></span>
+                        </span>
+                        <span class="tag">
+                            <span class="keyword"><b>width :</b></span>
+                            <span class="keyword-in"><b>100px</b></span>
+                            <span class="keyword-in2"><b>;</b></span>
+                        </span>
+                        <span class="tag">
+                            <span class="keyword"><b>height:</b></span>
+                            <span class="keyword-in"><b>200px</b></span>
+                            <span class="keyword-in2"><b>;</b></span>
+                        </span>
+                        <span class="tag">
+                            <span class="keyword"><b>background-color:</b></span>
+                            <span class="keyword-in"><b>black</b></span>
+                            <span class="keyword-in2"><b>;</b></span>
+                        </span>
+                        <span class="tag">
+                            <span class="keyword"><b>border-radius:</b></span>
+                            <span class="keyword-in"><b>10px</b></span>
+                            <span class="keyword-in2"><b>;</b></span>
+                        </span>
+                        <span class="tag">
+                            <span class="keyword"><b>position:</b></span>
+                            <span class="keyword-in"><b>absolute</b></span>
+                            <span class="keyword-in2"><b>;</b></span>
+                        </span>
+                        <span class="tag">
+                            <span class="keyword"><b>top:</b></span>
+                            <span class="keyword-in"><b>1100px</b></span>
+                            <span class="keyword-in2"><b>;</b></span>
+                        </span>
+                        <span class="tag">
+                            <span class="keyword"><b>left:</b></span>
+                            <span class="keyword-in"><b>500px</b></span>
+                            <span class="keyword-in2"><b>;</b></span>
+                        </span>
+                        <span class="tag2">
+                            <span class="keyword"><b>}</b></span>
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="znach1">
+                <div class="h1-znach1"><b>ЗНАЧЕНИЕ FIXED</b></div>
+                <div class="znach1-obyas">
+                        <p class="znch1"><b>В правом верхнем углу вашего экрана вы видите объект который
+                            который постоянно ездит по странице вместе с ползунком. Это значение fixed
+                            оно фиксирует объект на месте и не куда не смещает, оно теперь всегда будет
+                            в правом верхнем углу экрана</b></p>               
+                </div>
+                <div class="obertka-span">
+                    <span class="tag1">
+                        <span class="keyword1"><b>.fixed {</b></span>
+                    </span>
+                    <span class="tag">
+                        <span class="keyword"><b>width:</b></span>
+                        <span class="keyword-in"><b>200px</b></span>
+                        <span class="keyword-in2"><b>;</b></span>
+                    </span>
+                    <span class="tag">
+                        <span class="keyword"><b>height:</b></span>
+                        <span class="keyword-in"><b>100px</b></span>
+                        <span class="keyword-in2"><b>;</b></span>
+                    </span>
+                    <span class="tag">
+                        <span class="keyword"><b>background-color:</b></span>
+                        <span class="keyword-in"><b>rgb</b></span>
+                        <span class="keyword"><b>(</b></span>
+                        <span class="word"><b>49, 49, 49</b></span>
+                        <span class="keyword"><b>)</b></span>
+                        <span class="keyword-in2"><b>;</b></span>
+                    </span>
+                    <span class="tag">
+                        <span class="keyword"><b>border-radius :</b></span>
+                        <span class="keyword-in"><b>15px</b></span>
+                        <span class="keyword-in2"><b>;</b></span>
+                    </span>
+                    <span class="tag">
+                        <span class="keyword"><b>position :</b></span>
+                        <span class="keyword-in"><b>fixed</b></span>
+                        <span class="keyword-in2"><b>;</b></span>
+                    </span>
+                    <span class="tag">
+                        <span class="keyword"><b>top :</b></span>
+                        <span class="keyword-in"><b>50px</b></span>
+                        <span class="keyword-in2"><b>;</b></span>
+                    </span>
+                    <span class="tag">
+                        <span class="keyword"><b>right :</b></span>
+                        <span class="keyword-in"><b>20px</b></span>
+                        <span class="keyword-in2"><b>;</b></span>
+                    </span>
+                    <span class="tag2">
+                        <span class="keyword"><b>}</b></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="fixed">
+            <p class="p-fixed"><b>FIXED</b></p>
+        </div>
+            <div class="znach2">
+                <div class="h1-znach1"><b>ЗНАЧЕНИЕ RELATIVE</b></div>
+                <div class="znach1-obyas">
+                    <p class="znch1"><b>Положение элемента устанавливается 
+                        относительно его исходного места. Добавление 
+                        свойств left, top, right и bottom изменяет позицию 
+                        элемента и сдвигает его в ту или иную сторону от 
+                        первоначального расположения. </b></p>
+                </div>
+                    <div class="obertka-sp">
+                        <div class="relative1">
+                            <div class="block-rltv1"></div>
+                        </div>
+                        <div class="obertka-span3">
+                            <span class="tag1">
+                                <span class="keyword1"><b>.block.rltv1 {</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>width :</b></span>
+                                <span class="keyword-in"><b>100px</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>height :</b></span>
+                                <span class="keyword-in"><b>100px</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>background-color :</b></span>
+                                <span class="keyword-in"><b>black</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>border-radius :</b></span>
+                                <span class="keyword-in"><b>5px</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>position :</b></span>
+                                <span class="keyword-in"><b>relative</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>top :</b></span>
+                                <span class="keyword-in"><b>0</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>left :</b></span>
+                                <span class="keyword-in"><b>0</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag2">
+                                <span class="keyword"><b>}</b></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="obertka-sp2">
+                        <div class="relative2">
+                            <div class="block-rltv2"></div>
+                        </div>
+                        <div class="obertka-span4">
+                            <span class="tag1">
+                                <span class="keyword1"><b>.block-rltv2 {</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>width :</b></span>
+                                <span class="keyword-in"><b>200px</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>height :</b></span>
+                                <span class="keyword-in"><b>100px</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>background-color :</b></span>
+                                <span class="keyword-in"><b>black</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>border-radius :</b></span>
+                                <span class="keyword-in"><b>5px</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>position :</b></span>
+                                <span class="keyword-in"><b>relative</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>top :</b></span>
+                                <span class="keyword-in"><b>100px</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag">
+                                <span class="keyword"><b>left :</b></span>
+                                <span class="keyword-in"><b>400px</b></span>
+                                <span class="keyword-in2"><b>;</b></span>
+                            </span>
+                            <span class="tag2">
+                                <span class="keyword"><b>}</b></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+    <script src="https://helpfront.ru/HF/helpFront.js"></script>
+</body>
+</html>
