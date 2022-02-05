@@ -1,4 +1,4 @@
-// Добавление иконки скачать для компонента "кнопка скачать"
+// Добавление иконки загрузки
 export function createIconBtnDownload(selector) {
     const downloadBlocks = document.querySelectorAll(selector);
     downloadBlocks.forEach(item => {
